@@ -1,3 +1,3 @@
-==ASN.1 ±ê×¼ÎÄµµµÄÖĞÎÄ·­Òë==
-* Ô´×Ô[ÏîÄ¿](https://github.com/activesys/asn1x)£¬Ò»¸öASN.1µÄCÓïÑÔ¿â
-* ÔÚÏßÔÄ¶Á[µØÖ·](asn1.readthedocs.org)
+==ASN.1 æ ‡å‡†æ–‡æ¡£çš„ä¸­æ–‡ç¿»è¯‘==
+* æºè‡ª[é¡¹ç›®](https://github.com/activesys/asn1x)ï¼Œä¸€ä¸ªASN.1çš„Cè¯­è¨€åº“
+* åœ¨çº¿é˜…è¯»[åœ°å€](asn1.readthedocs.org)
