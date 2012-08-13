@@ -1,0 +1,420 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>附加的定义 &mdash; ITU标准文档X.680 0.1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="ITU标准文档X.680 0.1.0 documentation" href="../index.html" />
+    <link rel="up" title="Definitions 定义" href="definitions.html" />
+    <link rel="next" title="附录F" href="appendix/F.html" />
+    <link rel="prev" title="Definitions 定义" href="definitions.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="appendix/F.html" title="附录F"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="definitions.html" title="Definitions 定义"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">ITU标准文档X.680 0.1.0 documentation</a> &raquo;</li>
+          <li><a href="definitions.html" accesskey="U">Definitions 定义</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="id1">
+<h1>附加的定义<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="abstract-character">
+<h2>abstract character 抽象字符<a class="headerlink" href="#abstract-character" title="Permalink to this headline">¶</a></h2>
+<p>抽象字符是用来组织，控制和表示文本数据的。</p>
+<p><strong>NOTE</strong>- <a class="reference internal" href="appendix/F.html"><em>附录F</em></a> 提供了关于抽象字符的更完整的描述.</p>
+</div>
+<div class="section" id="abstract-value">
+<h2>abstract value 抽象值<a class="headerlink" href="#abstract-value" title="Permalink to this headline">¶</a></h2>
+<p>一个值，这个值的定义仅仅基于用于表达语义的类型，与它在任何编码中如何表达无关。</p>
+<p><em>NOTE</em>-抽象值的例子是整型,布尔型,字符串类型或者是整型、布尔型的序列(或候选)的值.</p>
+</div>
+<div class="section" id="asn-1-character-set-asn-1">
+<h2>ASN.1 character set ASN.1字符集<a class="headerlink" href="#asn-1-character-set-asn-1" title="Permalink to this headline">¶</a></h2>
+<p>[第十条]:todo:中描述的用在ASN.1符号中的字符的集合.</p>
+</div>
+<div class="section" id="asn-1-specification-asn-1">
+<h2>ASN.1 specification ASN.1说明<a class="headerlink" href="#asn-1-specification-asn-1" title="Permalink to this headline">¶</a></h2>
+<p>一个或多个ASN.1模块的集合。</p>
+</div>
+<div class="section" id="associated-type">
+<h2>associated type 关联类型<a class="headerlink" href="#associated-type" title="Permalink to this headline">¶</a></h2>
+<p>关联类型是一个仅仅用于定义值或定义一种类型的子类型符号。</p>
+<p><em>NOTE</em>-关联类型在本标准中定义，仅仅是因为必须说明ASN.1中类型的定义与编码之间的显著差别。关联类型的定义并未出现在用户说明中。</p>
+</div>
+<div class="section" id="bitstring-type">
+<h2>bitstring type 位串类型<a class="headerlink" href="#bitstring-type" title="Permalink to this headline">¶</a></h2>
+<p>一个表示0至多个位序列的简单类型</p>
+<p><em>NOTE</em>-使用没有内容约束的bitstring(或者octetstring)类型的值来携带嵌入式的抽象值编码的方法已经废弃了.相反的使用embedded-pdv类型提供的机制更灵活,这种类型允许声明嵌入式抽象值的抽象语法和编码规则.</p>
+</div>
+<div class="section" id="boolean-type">
+<h2>boolean type 布尔型<a class="headerlink" href="#boolean-type" title="Permalink to this headline">¶</a></h2>
+<p>有两种不同值的简单类型</p>
+</div>
+<div class="section" id="character-property">
+<h2>character property 字符属性<a class="headerlink" href="#character-property" title="Permalink to this headline">¶</a></h2>
+<p>与定义字符指令表中的每一项相关联的信息集合。</p>
+<dl class="docutils">
+<dt><em>NOTE</em>-这些信息通常会包含下面的部分或全部项目:</dt>
+<dd><ul class="first last simple">
+<li>图形符号</li>
+<li>字符名</li>
+<li>与在特殊环境下使用的字符相关联的函数定义</li>
+<li>是否代表一个数字</li>
+<li>在(大写/小写)情况下与之相关的不同的字符</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="character-abstract-syntax">
+<h2>character abstract syntax 字符抽象语法<a class="headerlink" href="#character-abstract-syntax" title="Permalink to this headline">¶</a></h2>
+<p>任何使用一系列特定字符集而组成的特定字符串(0，1，或更多字符)而形成的语法</p>
+</div>
+<div class="section" id="character-repertoire">
+<h2>character repertoire 字符指令集<a class="headerlink" href="#character-repertoire" title="Permalink to this headline">¶</a></h2>
+<p>在字符集合中那些与编码独立的字符</p>
+</div>
+<div class="section" id="character-string-types">
+<h2>character string types 字符串类型<a class="headerlink" href="#character-string-types" title="Permalink to this headline">¶</a></h2>
+<p>一种使用某特定字符集中形成一串字符的简单类型。</p>
+</div>
+<div class="section" id="character-transfer-syntax">
+<h2>character transfer syntax 字符传输语法<a class="headerlink" href="#character-transfer-syntax" title="Permalink to this headline">¶</a></h2>
+<p>任何字符抽象语法的传输语法</p>
+<p><em>NOTE</em>-ASN.1不支持那些不把所有的字符串编码成为8位的整数倍的字符传输语法.</p>
+</div>
+<div class="section" id="choice-types">
+<h2>choice types 选择类型<a class="headerlink" href="#choice-types" title="Permalink to this headline">¶</a></h2>
+<p>通过引用一个不同的类型的列表来定义的类型;CHOICE类型的每一个值都来自于相应的组件类型的值.</p>
+</div>
+<div class="section" id="component-type">
+<h2>component type 组件类型<a class="headerlink" href="#component-type" title="Permalink to this headline">¶</a></h2>
+<p>当定义 <strong>CHOICE</strong>, <strong>SET</strong>, <strong>SEQUENCE</strong>, <strong>SET OF</strong> 或者 <strong>SEQUENCE OF</strong> 时引用的类型中的一种类型。</p>
+</div>
+<div class="section" id="constraint">
+<h2>constraint 约束<a class="headerlink" href="#constraint" title="Permalink to this headline">¶</a></h2>
+<p>一个可以用来与一个类型相关联,来定义这个类型的子类型的符号。</p>
+</div>
+<div class="section" id="contents-constraint">
+<h2>contents constraint 内容约束<a class="headerlink" href="#contents-constraint" title="Permalink to this headline">¶</a></h2>
+<p>应用于bitstring或者octetstring上的约束, 这种约束要么是制定ASN.1类型的编码内容或者是用来出来内容的程序。</p>
+</div>
+<div class="section" id="control-characters">
+<h2>control  characters 控制字符<a class="headerlink" href="#control-characters" title="Permalink to this headline">¶</a></h2>
+<p>在一些字符条目中的字符,这些字符有名字(并且可能在某些环境下被赋予一些相关的功能)但是没有图形符号,并且不是空格字符。</p>
+<p><em>NOTE</em> - HORIZONTAL TABULATION (9) and LINE FEED (10) 是控制字符的例子,它们在打印环境中拥有格式化功能. DATA LINK ESCAPE (16)是另一个控制字符的例子,它在通信环境下被赋予了一些功能.</p>
+</div>
+<div class="section" id="coordinated-universal-time-utc">
+<h2>Coordinated  Universal  Time  (UTC) 世界调整时间<a class="headerlink" href="#coordinated-universal-time-utc" title="Permalink to this headline">¶</a></h2>
+<p>由国际时间管理局维护的时间尺度,它基于标准频率和时间信号的协调时间形式.</p>
+<p><em>NOTE</em> 1 – 这个定义的原始文件是ITU-R Rec. TF.460-5. ITU-R将世界调整时间的缩写定义为UTC.</p>
+<p><em>NOTE</em> 2 – UTC和格林威治时间(GMT)是可选的两个时间标准,大部分情况下确定的时间是相同的.</p>
+</div>
+<div class="section" id="element">
+<h2>element 元素<a class="headerlink" href="#element" title="Permalink to this headline">¶</a></h2>
+<p>一个给定类型的值或者给定信息对象类的信息对象,与相同类型的全部其他值或者相同类的其他信息对象有所区别。</p>
+</div>
+<div class="section" id="element-set">
+<h2>element set 元素集<a class="headerlink" href="#element-set" title="Permalink to this headline">¶</a></h2>
+<p>元素的集合,它们的所有元素都是给定类型的值或者给定类的信息对象。</p>
+<p><em>NOTE</em> – 给定类定义在ITU-T Rec. X.681 | ISO/IEC 8824-2</p>
+</div>
+<div class="section" id="embedded-pdv-type-pdv">
+<h2>embedded-pdv type 嵌入的pdv类型<a class="headerlink" href="#embedded-pdv-type-pdv" title="Permalink to this headline">¶</a></h2>
+<p>是一种类型,它的值的集合是几乎所有抽象语法的值的集合的组合.当想要传输协议的抽象值,这种值的类型采用ASN.1以外的描述定义的时候,embedded-dev类型可以用在ASN.1中来完成这样的描述.它携带了被传输的抽象值的抽象语法的标识符,作为编码这种抽象值的编码规范的标识符.</p>
+</div>
+<div class="section" id="encoding">
+<h2>encoding 编码<a class="headerlink" href="#encoding" title="Permalink to this headline">¶</a></h2>
+<p>将一套编码规则应用到一个抽象值之后得到的位模式的结果.</p>
+</div>
+<div class="section" id="asn-1-encoding-rules-asn-1">
+<h2>(ASN.1) encoding rules ASN.1编码规则<a class="headerlink" href="#asn-1-encoding-rules-asn-1" title="Permalink to this headline">¶</a></h2>
+<p>转换ASN.1类型的值的时候指定的一套规则.编码规范通过给定类型的知识,也允许从编码后的结果中恢复原来的值.</p>
+<p><em>NOTE</em> - 为了指定特别的编码规则，许多引用的类型(和值)的记号，其可以提供对于内建类型或值的可选记号，是不相关的。</p>
+</div>
+<div class="section" id="enumerated-types">
+<h2>enumerated types 枚举类型<a class="headerlink" href="#enumerated-types" title="Permalink to this headline">¶</a></h2>
+<p>一种简单类型,它的值是给定的标识符,这些标识符是类型定义符号的一部分。</p>
+</div>
+<div class="section" id="extension-addition">
+<h2>extension addition 扩展添加<a class="headerlink" href="#extension-addition" title="Permalink to this headline">¶</a></h2>
+<p>在扩展列表中添加的符号中的一个.对于SET, SEQUENCE和CHOICE类型,每一个扩展添加要么是单独的扩展添加组或者是单一一个组件类型.对于枚举类型,扩展添加都是将来要添加的枚举项.对于约束扩展添加是一个子类型元素.</p>
+<p><em>NOTE</em> – 扩展项是文本有序的(扩展符号后面)以及逻辑有序(具有增序枚举值,在CHOICE可选项中是增序标签)</p>
+</div>
+<div class="section" id="extension-addition-group">
+<h2>extension addition group 扩展添加组<a class="headerlink" href="#extension-addition-group" title="Permalink to this headline">¶</a></h2>
+<p>使用版本括号组合到一起的一个或者多个SET, SEQUENCE或CHOICE类型的一个或者多个组件.扩展添加组被用来清晰的标识SET, SEQUENCE或者CHOICE类型的组件,这些组件被添加在特定版本的ASN.1模块中,同时能够使用简单的整型表示版本.</p>
+</div>
+<div class="section" id="extension-addition-type">
+<h2>extension addition type 扩展添加类型<a class="headerlink" href="#extension-addition-type" title="Permalink to this headline">¶</a></h2>
+<p>一个包含在扩展添加组中的类型或者本身就在扩展添加中的单独的组件类型(在这种情况下,这个组件类型不包含在扩展添加组中)</p>
+</div>
+<div class="section" id="extensible-constraint">
+<h2>extensible constraint 扩展的约束<a class="headerlink" href="#extensible-constraint" title="Permalink to this headline">¶</a></h2>
+<p>是在外层带有扩展标识符的,或者通过与值的可扩展集合进行集合运算而获得可扩展性的子类型约束。</p>
+</div>
+<div class="section" id="extension-insertion-point-or-insertion-point">
+<h2>extension insertion point (or insertion point) 扩展插入点<a class="headerlink" href="#extension-insertion-point-or-insertion-point" title="Permalink to this headline">¶</a></h2>
+<p>在类型定义中插入扩展的位置.如果类型定义中仅有一个省略号的时候,这个位置就在先前的扩展类型的类型符号的末尾.如果有一对扩展符号,这个位置就在第二个省略号的前面.</p>
+<p><em>NOTE</em> – 任何CHOICE, SEQUENCE或者SET类型的组件中最多有一个插入点.</p>
+</div>
+<div class="section" id="extension-marker">
+<h2>extension marker 扩展标记<a class="headerlink" href="#extension-marker" title="Permalink to this headline">¶</a></h2>
+<p>一个句法标记(一个省略号),它包含在组成扩展部分的所有类型中。</p>
+</div>
+<div class="section" id="extension-marker-pair">
+<h2>extension marker pair 扩展标记对<a class="headerlink" href="#extension-marker-pair" title="Permalink to this headline">¶</a></h2>
+<p>一对扩展符号,扩展添加都插入到这两个扩展符号中间。</p>
+</div>
+<div class="section" id="extension-related">
+<h2>extension-related 扩展相关<a class="headerlink" href="#extension-related" title="Permalink to this headline">¶</a></h2>
+<p>具有相同扩展根的两个类型,其中一个是通过在另一个中添加零个或者多个扩展添加被创建出来的。</p>
+</div>
+<div class="section" id="extension-root">
+<h2>extension root 扩展根<a class="headerlink" href="#extension-root" title="Permalink to this headline">¶</a></h2>
+<p>扩展序列中的第一个扩展类型.这种类型的扩展符号中没有扩展添加或者在扩展符号和”}”或者”)”之间有注释或者空白, 或者在扩展符号对中没有扩展添加或者只有一个逗号,注释或空白.</p>
+<p><em>NOTE</em> – 只有扩展根可以是扩展序列中的第一个类型</p>
+</div>
+<div class="section" id="extension-series">
+<h2>extension series 扩展序列<a class="headerlink" href="#extension-series" title="Permalink to this headline">¶</a></h2>
+<p>一系列ASN.1类型,这些类型是有序的,扩展序列中的任何连续的类型都是通过在前面的类型的扩展插入点添加文字而形成的.</p>
+</div>
+<div class="section" id="extensible-type">
+<h2>extensible type 扩展类型<a class="headerlink" href="#extensible-type" title="Permalink to this headline">¶</a></h2>
+<p>带有一个扩展符号或者应用了可扩展约束的类型.</p>
+</div>
+<div class="section" id="external-reference">
+<h2>external reference 外部引用<a class="headerlink" href="#external-reference" title="Permalink to this headline">¶</a></h2>
+<p>类型引用,值引用,信息对象类引用,信息对象引用或者信息对象集合引用(可能是参数化的),这些都是定义在其他模块中而不是定义在当前模块中的,通过在被引用的项前面添加模块名前缀来引用它们.</p>
+<p><em>EXAMPLE</em> – ModuleName.TypeReference</p>
+</div>
+<div class="section" id="external-type">
+<h2>external type 外部类型<a class="headerlink" href="#external-type" title="Permalink to this headline">¶</a></h2>
+<p>一种类型,它是ASN.1规范的一部分,它包含了一个值这个值的类型可能是定义在ASN.1规范之外的.它也包含了这个值的类型的标识符.</p>
+</div>
+<div class="section" id="false">
+<h2>false 假<a class="headerlink" href="#false" title="Permalink to this headline">¶</a></h2>
+<p>布尔类型的一个值.</p>
+</div>
+<div class="section" id="governing-type-governor">
+<h2>governing (type); governor 调节器<a class="headerlink" href="#governing-type-governor" title="Permalink to this headline">¶</a></h2>
+<p>一个类型定义或者类型引用,它影响了ASN.1语法的部分解释,要求ASN.1的部分语法去引用governing类型中的值.</p>
+</div>
+<div class="section" id="identical-type-definitions">
+<h2>identical type definitions 可识别的类型定义<a class="headerlink" href="#identical-type-definitions" title="Permalink to this headline">¶</a></h2>
+<p>ASN.1”Type”产生式的两个实例被定义成相同的类型定义的条件是,如果实施了附录B中的转换之后,它们是相同词法项目的相同有序列表。</p>
+</div>
+<div class="section" id="integer-type">
+<h2>integer type 整数类型<a class="headerlink" href="#integer-type" title="Permalink to this headline">¶</a></h2>
+<p>一个简单类型,它的值是正整数或者负整数,包括零(作为单一一个值).</p>
+<p><em>NOTE</em> – 当某种编码规范限制整数的范围的时候,这种限制是不会影响任何的ASN.1用户的.</p>
+</div>
+<div class="section" id="lexical-item">
+<h2>lexical item 文字项目<a class="headerlink" href="#lexical-item" title="Permalink to this headline">¶</a></h2>
+<p>来自于ASN.1字符集中的被命名的字符序列.它被用来生成ASN.1符号.</p>
+</div>
+<div class="section" id="module">
+<h2>module 模块<a class="headerlink" href="#module" title="Permalink to this headline">¶</a></h2>
+<p>一个或者多个ASN.1类型,值,值集合,信息对象类,信息对象和信息对象集合(还有这些项目的参数化)符号实例,使用ASN.1模块符号封装起来。</p>
+</div>
+<div class="section" id="null-type">
+<h2>null type 空类型<a class="headerlink" href="#null-type" title="Permalink to this headline">¶</a></h2>
+<p>一个简单类型,包含一个单一值,也叫做null.</p>
+</div>
+<div class="section" id="object">
+<h2>object 对象<a class="headerlink" href="#object" title="Permalink to this headline">¶</a></h2>
+<p>广义的信息,定义或者描述,要求使用一个名字来表示通信实例中的关于它的使用.</p>
+<p><em>NOTE</em> – 这样的对象可能是定义在ITU-T Rec. X.681 | ISO/IEC 8824-2.中的信息对象.</p>
+</div>
+<div class="section" id="object-descriptor-type">
+<h2>object descriptor type 对象描述类型<a class="headerlink" href="#object-descriptor-type" title="Permalink to this headline">¶</a></h2>
+<p>是一个类型,它的值是一种可读文本,提供了一个对象的主要描述.</p>
+<p><em>NOTE</em> – 一个对象描述值通常与单一的对象关联.仅有一个对象标识符值无歧义的表示一个对象.</p>
+</div>
+<div class="section" id="object-identifier">
+<h2>object identifier 对象标识符<a class="headerlink" href="#object-identifier" title="Permalink to this headline">¶</a></h2>
+<p>是一个全局的唯一的值,它明确的标识一个对象</p>
+</div>
+<div class="section" id="object-identifier-type">
+<h2>object identifier type 对象标识类型<a class="headerlink" href="#object-identifier-type" title="Permalink to this headline">¶</a></h2>
+<p>是一个简单类型,它的值是一个根据ITU-T Rec. X.660 | ISO/IEC 9834定义的规则分配的所有对象标识符的集合.</p>
+<p><em>NOTE</em> – ITU-T Rec. X.660 | ISO/IEC 9834-1的规则对于给一个对象授权一个独立的对象标识符定义了很宽的授权范围.</p>
+</div>
+<div class="section" id="octetstring-type">
+<h2>octetstring type 八比特组串类型<a class="headerlink" href="#octetstring-type" title="Permalink to this headline">¶</a></h2>
+<p>是一个简单的类型,它的值是一个零个,一个或者多个八位组的有序序列.</p>
+</div>
+<div class="section" id="open-systems-interconnection">
+<h2>open systems interconnection 开放系统互联<a class="headerlink" href="#open-systems-interconnection" title="Permalink to this headline">¶</a></h2>
+<p>用来表示来自多个ASN.1类型的值的集合的ASN.1符号.</p>
+<p><em>NOTE 1</em> – 在这篇国际标准中,”open type”和”open type notation”是同义词.</p>
+<p><em>NOTE 2</em> – 所有的ASN.1编码标准都为单一的ASN.1类型的值提供了明确的编码规则.我们不需要为”open type notation”提供明确的编码规则,因为在规范描述阶段它携带的值的类型通常没有确定下来.这些抽象值的域能够被明确的确定之前,在”open type notation”中的被编码的值的类型的知识是需要的.</p>
+<p><em>NOTE 3</em> – 这篇国际标准中唯一的一个”open type notation”是” ObjectClassFieldType”,它定义在ITU-T Rec. X.681 | ISO/IEC 8824-2,” FieldName”表示类型域或者可变类型值域.</p>
+</div>
+<div class="section" id="parent-type-of-a-subtype">
+<h2>parent type (of a subtype) (对于一个子类型的)父类型<a class="headerlink" href="#parent-type-of-a-subtype" title="Permalink to this headline">¶</a></h2>
+<p>当定义子类型的时候,这个被约束的类型管辖着子类型的符号.</p>
+<p><em>NOTE</em> – 父类型可能本身就是一些其他类型的子类型.</p>
+</div>
+<div class="section" id="production">
+<h2>production 产出物<a class="headerlink" href="#production" title="Permalink to this headline">¶</a></h2>
+<p>形式符号(也叫做语法或者巴克斯-瑙尔范式,BNF)的一部分用来指定ASN.1</p>
+</div>
+<div class="section" id="real-type">
+<h2>real type 实数类型<a class="headerlink" href="#real-type" title="Permalink to this headline">¶</a></h2>
+<p>一种简单类型,它的值是实数集合.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">附加的定义</a><ul>
+<li><a class="reference internal" href="#abstract-character">abstract character 抽象字符</a></li>
+<li><a class="reference internal" href="#abstract-value">abstract value 抽象值</a></li>
+<li><a class="reference internal" href="#asn-1-character-set-asn-1">ASN.1 character set ASN.1字符集</a></li>
+<li><a class="reference internal" href="#asn-1-specification-asn-1">ASN.1 specification ASN.1说明</a></li>
+<li><a class="reference internal" href="#associated-type">associated type 关联类型</a></li>
+<li><a class="reference internal" href="#bitstring-type">bitstring type 位串类型</a></li>
+<li><a class="reference internal" href="#boolean-type">boolean type 布尔型</a></li>
+<li><a class="reference internal" href="#character-property">character property 字符属性</a></li>
+<li><a class="reference internal" href="#character-abstract-syntax">character abstract syntax 字符抽象语法</a></li>
+<li><a class="reference internal" href="#character-repertoire">character repertoire 字符指令集</a></li>
+<li><a class="reference internal" href="#character-string-types">character string types 字符串类型</a></li>
+<li><a class="reference internal" href="#character-transfer-syntax">character transfer syntax 字符传输语法</a></li>
+<li><a class="reference internal" href="#choice-types">choice types 选择类型</a></li>
+<li><a class="reference internal" href="#component-type">component type 组件类型</a></li>
+<li><a class="reference internal" href="#constraint">constraint 约束</a></li>
+<li><a class="reference internal" href="#contents-constraint">contents constraint 内容约束</a></li>
+<li><a class="reference internal" href="#control-characters">control  characters 控制字符</a></li>
+<li><a class="reference internal" href="#coordinated-universal-time-utc">Coordinated  Universal  Time  (UTC) 世界调整时间</a></li>
+<li><a class="reference internal" href="#element">element 元素</a></li>
+<li><a class="reference internal" href="#element-set">element set 元素集</a></li>
+<li><a class="reference internal" href="#embedded-pdv-type-pdv">embedded-pdv type 嵌入的pdv类型</a></li>
+<li><a class="reference internal" href="#encoding">encoding 编码</a></li>
+<li><a class="reference internal" href="#asn-1-encoding-rules-asn-1">(ASN.1) encoding rules ASN.1编码规则</a></li>
+<li><a class="reference internal" href="#enumerated-types">enumerated types 枚举类型</a></li>
+<li><a class="reference internal" href="#extension-addition">extension addition 扩展添加</a></li>
+<li><a class="reference internal" href="#extension-addition-group">extension addition group 扩展添加组</a></li>
+<li><a class="reference internal" href="#extension-addition-type">extension addition type 扩展添加类型</a></li>
+<li><a class="reference internal" href="#extensible-constraint">extensible constraint 扩展的约束</a></li>
+<li><a class="reference internal" href="#extension-insertion-point-or-insertion-point">extension insertion point (or insertion point) 扩展插入点</a></li>
+<li><a class="reference internal" href="#extension-marker">extension marker 扩展标记</a></li>
+<li><a class="reference internal" href="#extension-marker-pair">extension marker pair 扩展标记对</a></li>
+<li><a class="reference internal" href="#extension-related">extension-related 扩展相关</a></li>
+<li><a class="reference internal" href="#extension-root">extension root 扩展根</a></li>
+<li><a class="reference internal" href="#extension-series">extension series 扩展序列</a></li>
+<li><a class="reference internal" href="#extensible-type">extensible type 扩展类型</a></li>
+<li><a class="reference internal" href="#external-reference">external reference 外部引用</a></li>
+<li><a class="reference internal" href="#external-type">external type 外部类型</a></li>
+<li><a class="reference internal" href="#false">false 假</a></li>
+<li><a class="reference internal" href="#governing-type-governor">governing (type); governor 调节器</a></li>
+<li><a class="reference internal" href="#identical-type-definitions">identical type definitions 可识别的类型定义</a></li>
+<li><a class="reference internal" href="#integer-type">integer type 整数类型</a></li>
+<li><a class="reference internal" href="#lexical-item">lexical item 文字项目</a></li>
+<li><a class="reference internal" href="#module">module 模块</a></li>
+<li><a class="reference internal" href="#null-type">null type 空类型</a></li>
+<li><a class="reference internal" href="#object">object 对象</a></li>
+<li><a class="reference internal" href="#object-descriptor-type">object descriptor type 对象描述类型</a></li>
+<li><a class="reference internal" href="#object-identifier">object identifier 对象标识符</a></li>
+<li><a class="reference internal" href="#object-identifier-type">object identifier type 对象标识类型</a></li>
+<li><a class="reference internal" href="#octetstring-type">octetstring type 八比特组串类型</a></li>
+<li><a class="reference internal" href="#open-systems-interconnection">open systems interconnection 开放系统互联</a></li>
+<li><a class="reference internal" href="#parent-type-of-a-subtype">parent type (of a subtype) (对于一个子类型的)父类型</a></li>
+<li><a class="reference internal" href="#production">production 产出物</a></li>
+<li><a class="reference internal" href="#real-type">real type 实数类型</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="definitions.html"
+                        title="previous chapter">Definitions 定义</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="appendix/F.html"
+                        title="next chapter">附录F</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/docsrc/addition_definitions.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="appendix/F.html" title="附录F"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="definitions.html" title="Definitions 定义"
+             >previous</a> |</li>
+        <li><a href="../index.html">ITU标准文档X.680 0.1.0 documentation</a> &raquo;</li>
+          <li><a href="definitions.html" >Definitions 定义</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, activesys reyoung.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>
